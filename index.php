@@ -12,14 +12,14 @@
 				<img class="logo" src="img/logo_ispm.png">
 				<div>Fahaizana-Fampadrosoana-Fihavanana</h4>
 			</div>
-			<from action="">
+			<from action="others/connexion_.php" method="POST">
 				<div class="email">
 					<label>E-mail :</label>
-					<input type="text" placeholder="Exemple@gmail.com" required>
+					<input type="text" placeholder="Exemple@gmail.com" name="email" required>
 				</div>
 				<div class="passwd">
 					<label>Password :</label>
-					<input type="password" placeholder="******" required>
+					<input type="password" placeholder="******" name="passwd" required>
 				</div>
 				<button type="submit" class="connecter">SE CONNECTER</button>
 				<div class="inscri">

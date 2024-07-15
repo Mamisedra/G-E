@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-
 		scale=1, minimum-scale=1, maximum-scale=1">
 		<title>E-cole</title>
-    </head>
-    <body>
+	</head>
+	<body>
 		<section class="inscription">
 			<div class="faneva">
 				<img class="logo" src="../img/logo_ispm.png">
 				<div>Fahaizana-Fampadrosoana-Fihavanana</h4>
 			</div>
-                <div class="name">
-                    <label>Nom :</label>
-                    <input type="text" placeholder="RANDRIANATOADRO">
-                </div>
-                <div class="prename">
-                    <label>Prenom :</label>
-                    <input type="text" placeholder="Masoandro">
-                </div>
+			<form action="inscription_.php" method="POST">
+				<div class="name">
+					<label>Nom :</label>
+					<input type="text" name="nom" placeholder="RANDRIANATOADRO">
+				</div>
+				<div class="prename">
+					<label>Prenom :</label>
+					<input type="text" name="prenom" placeholder="Masoandro">
+				</div>
 				<div class="email">
 					<label>Tel :</label>
-					<input type="text" placeholder="03********">
+					<input type="text" name="telephone" placeholder="03********">
 					<label>E-mail :</label>
-					<input type="text" placeholder="Exemple@gmail.com" required>
+					<input type="text" name="email" placeholder="Exemple@gmail.com" required>
 				</div>
 				<div>
 					<label>Matricule :</label>
-					<input type="text" placeholder="23 - 00154/30">
+					<input type="text" name="matricule" placeholder="23 - 00154/30">
 				</div>
 				<div>
 					<label>Fonction :</label>
 					<div>
 						<label>Prof :</label>
-						<input type="checkbox" value="Prof">
+						<input type="checkbox" name="prof" value="Prof">
 						<label>Etudiant :</label>
-						<input type="checkbox" value="Etudiant(e)">
+						<input type="checkbox" name="etudiant" value="Etudiant(e)">
 					</div>
 					<div class="cached">
 						<div class="Filiere">
 							<label>Filiere :</label>
-							<select>
+							<select name="filiere">
 								<option value="esiia">ESIIA</option>
 								<option value="imticia">IMTICIA</option>
 								<option value="isaia">ISAIA</option>
@@ -52,7 +53,7 @@
 						</div>
 						<div class="matiere">
 							<label>Matiere :</label>
-							<select>
+							<select name="matiere">
 								<option value="tdn">TDN</option>
 								<option value="mvc">MVC</option>
 								<option value="is">IS</option>
@@ -65,9 +66,9 @@
 				</div>
 				<div class="passwd">
 					<label>Nouveau mot de passe :</label>
-					<input type="password" placeholder="******" required>
+					<input type="password" name="pass" placeholder="******" required>
 					<label>confirme mot de passe :</label>
-					<input type="password" placeholder="******" required>
+					<input type="password" name="pass_W" placeholder="******" required>
 				</div>
 				<button type="submit" class="connecter">INSCRIPTION</button>
 				<div class="inscri">
@@ -76,5 +77,5 @@
 				</div>
 			</from>
 		</section>
-    </body>
+	</body>
 </html>
